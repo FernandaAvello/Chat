@@ -1,5 +1,5 @@
 function goToChat() {
-  window.location.href = '/chatView.html'
+  window.location.href = './chatView.html'
 }
 function goHome() {
   window.location.href = '/index.html'
