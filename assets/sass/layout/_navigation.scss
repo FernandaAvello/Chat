@@ -1,0 +1,9 @@
+.navigation__item {
+  border-bottom: 1px solid $primary-color;
+  cursor: pointer;
+}
+.navigation__icon--new {
+  color: red;
+  font-size: 10px;
+  margin: 10px 0 0 10px;
+}

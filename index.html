@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UserTesting</title>
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/98eab6b928.js" crossorigin="anonymous"></script>
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="home">
+  <button class="btn btn-lg home__button" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+    <i class="fa-solid fa-bars"></i>
+    <i class="fa-solid fa-caret-left"></i>
+  </button>
+  <div class="home__logo d-flex justify-content-center">
+    <img src="assets/img/logo.png" alt="logo" height="300" width=" 450">
+  </div>
+  <nav>
+    <div class="offcanvas offcanvas-start navigation" data-bs-backdrop="false" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+      <div class="offcanvas-header">
+        <div class="offcanvas-title" id="staticBackdropLabel">
+          <img src="assets/img/logo.png" alt="logo" height="110" width="150">
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body row align-items-center">
+        <div class="col-12 d-flex p-0 navigation__item">
+          <p class="ms-3">Página principal</p>
+        </div>
+        <div class="col-12 d-flex p-0 navigation__item">
+          <p class="ms-3">Preguntas frecuentes</p>
+        </div>
+        <div class="col-12 d-flex p-0 navigation__item">
+          <p class="ms-3">Manuales y tutoriales</p>
+        </div>
+        <div class="col-12 d-flex p-0 navigation__item">
+          <p class="ms-3">Noticias</p>
+        </div>
+        <div class="col-12 d-flex p-0 navigation__item">
+          <p class="ms-3">Calendario</p>
+        </div>
+        <div class="col-12 d-flex p-0 navigation__item">
+          <p class="ms-3">Administración de Perfil de usuario</p>
+        </div>
+        <div class="col-12 d-flex p-0 navigation__item" onclick="goToChat()">
+          <p class="ms-3">Chat para vendedores y equipo de soporte</p>
+          <i class="fa-solid fa-bell navigation__icon--new">New</i>
+        </div>
+      </div>
+    </div>
+  </nav>
+<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/scripts.js"></script>
+</body>
+</html>

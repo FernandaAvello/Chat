@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/98eab6b928.js" crossorigin="anonymous"></script>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+  <section class="container-fluid">
+    <section class="row container__background">
+      <!-- Contenedor Mobile -->
+      <section class="recents__conversations__mobile__container col-sm-12 col-md-12">
+        <div class="w-100 d-flex justify-content-between py-3 banner__mobile">
+          <button type="button" class="btn banner__button btn-sm" onclick="goHome()" data-bs-toggle="tooltip"
+            data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="Volver">
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+          <button class="btn btn-chat" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapse-recents-conversations" aria-expanded="false"
+            aria-controls="collapse-recents-conversations">
+            <i class="fa-solid fa-comments"></i>
+          </button>
+        </div>
+        <div class="row">
+          <div class="collapse" id="collapse-recents-conversations">
+            <div class="row">
+              <section class="col recents__conversations__mobile">
+                <h1 class="recents__conversations__h1">Chats</h1>
+                <input type="text" class="form-control mb-3" placeholder="Busca una conversación">
+
+                <div class="col-12 recent__conversation__card" onclick="changeCard()" data-bs-toggle="collapse"
+                  data-bs-target="#collapse-recents-conversations">
+                  <div class="row">
+                    <div class="col-3">
+                      <img src="assets/img/gojo.jpg" alt="image" class="recent__conversation__picture">
+                    </div>
+                    <div class="col-9">
+                      <div class="d-flex justify-content-between">
+                        <h5>Gojo Satoru</h5>
+                        <small>13:25</small>
+                      </div><br>
+                      <div class="d-flex">
+                        <small id="bold__text">Seguro! Mándame ubicación ...</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 recent__conversation__card">
+                  <div class="row">
+                    <div class="col-3">
+                      <img src="assets/img/geto.jpg" alt="image" class="recent__conversation__picture">
+                    </div>
+                    <div class="col-9">
+                      <div class="d-flex justify-content-between">
+                        <h5>Geto Suguru</h5>
+                        <small>17-04-2023</small>
+                      </div><br>
+                      <div class="d-flex">
+                        <small>Aloo?? Alooo??</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 recent__conversation__card">
+                  <div class="row">
+                    <div class="col-3">
+                      <img src="assets/img/sukuna.jpg" alt="image" class="recent__conversation__picture">
+                    </div>
+                    <div class="col-9">
+                      <div class="d-flex justify-content-between">
+                        <h5>Ryomen Sukuna</h5>
+                        <small>13-02-2023</small>
+                      </div><br>
+                      <div class="d-flex">
+                        <small>Si ya supe lo que hiciste >:c </small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="col-12 recent__conversation__card">
+                  <div class="row">
+                    <div class="col-3">
+                      <img src="assets/img/nanami.jpg" alt="image" class="recent__conversation__picture">
+                    </div>
+                    <div class="col-9">
+                      <div class="d-flex justify-content-between">
+                        <h5>Nanami Kento</h5>
+                        <small>Ayer</small>
+                      </div><br>
+                      <div class="d-flex">
+                        <small>Se me olvidó contarte que ...</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 recent__conversation__card">
+                  <div class="row">
+                    <div class="col-3">
+                      <img src="assets/img/toji.jpg" alt="image" class="recent__conversation__picture">
+                    </div>
+                    <div class="col-9">
+                      <div class="d-flex justify-content-between">
+                        <h5>Toji Fushiguro</h5>
+                        <small>22-03-2022</small>
+                      </div><br>
+                      <div class="d-flex">
+                        <small>Ah, entonces nos vemos en Junio!</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Contenedor Desktop -->
+      <section class="col-sm-12 col-lg-4 recents__conversations recents__conversations__desktop__container">
+        <div class="d-flex align-items-center">
+          <button type="button" class="btn banner__button btn-sm" onclick="goHome()" data-bs-toggle="tooltip"
+            data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="Volver">
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+          <h1 class="recents__conversations__h1">Chats</h1>
+        </div>
+        <input type="text" class="form-control mb-3" placeholder="Busca una conversación">
+
+        <div class="col-12 recent__conversation__card" onclick="changeCard()">
+          <div class="row">
+            <div class="col-3">
+              <img src="assets/img/gojo.jpg" alt="image" class="recent__conversation__picture">
+            </div>
+            <div class="col-9">
+              <div class="d-flex justify-content-between">
+                <h5>Gojo Satoru</h5>
+                <small>13:25</small>
+              </div><br>
+              <div class="d-flex">
+                <small id="bold__text">Seguro! Mándame ubicación...</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 recent__conversation__card">
+          <div class="row">
+            <div class="col-3">
+              <img src="assets/img/geto.jpg" alt="image" class="recent__conversation__picture">
+            </div>
+            <div class="col-9">
+              <div class="d-flex justify-content-between">
+                <h5>Geto Suguru</h5>
+                <small>Ayer</small>
+              </div><br>
+              <div class="d-flex">
+                <small>Aloo?? Alooo??</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 recent__conversation__card">
+          <div class="row">
+            <div class="col-3">
+              <img src="assets/img/sukuna.jpg" alt="image" class="recent__conversation__picture">
+            </div>
+            <div class="col-9">
+              <div class="d-flex justify-content-between">
+                <h5>Ryomen Sukuna</h5>
+                <small>13-02-2023</small>
+              </div><br>
+              <div class="d-flex">
+                <small>Si ya supe lo que hiciste >:c </small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 recent__conversation__card">
+          <div class="row">
+            <div class="col-3">
+              <img src="assets/img/nanami.jpg" alt="image" class="recent__conversation__picture">
+            </div>
+            <div class="col-9">
+              <div class="d-flex justify-content-between">
+                <h5>Nanami Kento</h5>
+                <small>31-10-2022</small>
+              </div><br>
+              <div class="d-flex">
+                <small>😢</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 recent__conversation__card">
+          <div class="row">
+            <div class="col-3">
+              <img src="assets/img/toji.jpg" alt="image" class="recent__conversation__picture">
+            </div>
+            <div class="col-9">
+              <div class="d-flex justify-content-between">
+                <h5>Toji Fushiguro</h5>
+                <small>22-03-2022</small>
+              </div><br>
+              <div class="d-flex">
+                <small>Ah, entonces nos vemos en Junio!</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Ventana de Conversación Actual -->
+      <section id="gojo-conversation" class="col-sm-12 col-md-12 col-lg-8 d-flex flex-column justify-content-between actual__conversation">
+        <div class="row actual__conversation__banner d-flex justify-content-between">
+          <div class="col-12">
+            <div class="d-flex justify-content-between pt-2">
+              <div class="d-flex align-items-center">
+                <img src="assets/img/gojo.jpg" alt="image" class="conversation__banner__picture">
+                <h3 class="ps-3">Gojo Satoru</h3>
+              </div>
+              <div class="conversation__banner__icons d-flex">
+                <i class="fa-solid fa-video"></i>
+                <i class="fa fa-phone ps-5"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Diálogos -->
+        <div class="flex-grow-1">
+          <div class="row mt-4 flex-row-reverse">
+            <div class="col-8">
+              <span class="badge rounded-pill conversation__pill__2">Hola! Cómo estas? Dónde estabas?? Estabas en Shibuya cuando pasó todo? Vi las noticias...</span>
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col-8">
+              <span class="badge rounded-pill conversation__pill__1">Hey! No supiste? Estuve encerrado 19 días en la prisión confinadora, pero ya salí 😎</span>
+            </div>
+          </div>
+          <div class="row mt-4 flex-row-reverse">
+            <div class="col-8">
+              <span class="badge rounded-pill conversation__pill__2">Algo de eso supe, ya sabes, en la escuela no han hablado mucho de eso...pero tu estás bien? </span>
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col-8">
+              <span class="badge rounded-pill conversation__pill__1">Mmm algo sí, has hablado con Nanami? No lo he visto.. y vi a varios chicos de la escuela, pero nosé dónde está Nanami, ni Nobara y algunos más..🤔</span>
+            </div>
+          </div>
+          <div class="row mt-4 flex-row-reverse">
+            <div class="col-8">
+              <span class="badge rounded-pill conversation__pill__2">Tenemos que conversar, parece que pasaron muchas cosas mientras estabas encerrado...Prefiero hablarlo personalmente, tienes tiempo para un café?</span>
+            </div>
+          </div>
+          <div class="row mt-4 mb-4">
+            <div class="col-8">
+              <span class="badge rounded-pill conversation__pill__1">Seguro! Mándame ubicación y voy enseguida</span>
+            </div>
+          </div>
+        </div>
+        <!-- Barra Inferior con Input e Iconos -->
+        <div class="row conversation__input__div">
+          <div class="row">
+            <div class="col-2 d-flex">
+              <i class="fa-regular fa-face-smile fa-lg conversation__input__icon"></i>
+              <div class="dropdown">
+                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fa-solid fa-paperclip fa-lg conversation__input__icon--clip"></i>
+                </button>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-item">Archivo</li>
+                  <li class="dropdown-item">Foto o Video</li>
+                  <li class="dropdown-item">Encuesta</li>
+                  <li class="dropdown-item">Contacto</li>
+                  <li class="dropdown-item">Dibujo</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-9 d-flex">
+              <input type="text" class="form-control conversation__input" placeholder="Escribe un mensaje...">
+            </div>
+            <div class="col-1 d-flex">
+              <i class="fa-solid fa-microphone fa-lg conversation__input__icon"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  </section>
+  <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,185 @@
+@import url("../bootstrap/css/bootstrap.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.custom-tooltip {
+  --bs-tooltip-bg: var(--bs-dark);
+}
+
+.navigation__item {
+  border-bottom: 1px solid #001d61;
+  cursor: pointer;
+}
+
+.navigation__icon--new {
+  color: red;
+  font-size: 10px;
+  margin: 10px 0 0 10px;
+}
+
+.home {
+  background-color: whitesmoke;
+}
+.home .home__button {
+  background-color: #64759E;
+  color: white;
+  margin: 20px;
+}
+
+.container__background {
+  background-color: #546284;
+}
+
+.banner {
+  background-color: #001d61;
+  height: 3rem;
+}
+
+.recents__conversations, .recents__conversations__mobile {
+  background-color: #64759E;
+  height: 100vh;
+}
+.recents__conversations .banner__button, .recents__conversations__mobile .banner__button {
+  background-color: #001d61;
+  color: whitesmoke;
+  margin: 0.5rem;
+  width: 50px;
+  height: 40px;
+}
+.recents__conversations .recents__conversations__h1, .recents__conversations__mobile .recents__conversations__h1 {
+  color: whitesmoke;
+  margin: 1rem 0;
+  text-align: center;
+}
+.recents__conversations .recent__conversation__card, .recents__conversations__mobile .recent__conversation__card {
+  background-color: whitesmoke;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-right: 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+.recents__conversations .recent__conversation__card:hover, .recents__conversations__mobile .recent__conversation__card:hover {
+  opacity: 0.6;
+}
+.recents__conversations .recent__conversation__picture, .recents__conversations__mobile .recent__conversation__picture {
+  border-radius: 50%;
+  height: 4rem;
+  width: 4rem;
+}
+.recents__conversations #bold__text, .recents__conversations__mobile #bold__text {
+  font-weight: 700;
+  font-style: italic;
+  opacity: 0.8;
+}
+
+.btn-chat {
+  background-color: #001d61;
+  color: whitesmoke;
+}
+
+.btn-chat:hover {
+  color: whitesmoke;
+}
+
+.actual__conversation {
+  background-image: url("../img/fondo_chat.png");
+  background-color: "";
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-left: 3px solid #001d61;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.08s linear;
+}
+.actual__conversation .actual__conversation__banner {
+  background-color: #64759E;
+  color: whitesmoke;
+  height: 5rem;
+}
+.actual__conversation .conversation__banner__icons {
+  margin-right: 3rem;
+  align-items: center;
+}
+.actual__conversation .conversation__banner__picture {
+  border-radius: 50%;
+  height: 4rem;
+  width: 4rem;
+}
+.actual__conversation .conversation__pill__1 {
+  background-color: #fdfdfd;
+  color: #202020;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 15px;
+}
+.actual__conversation .conversation__pill__2 {
+  background-color: lightblue;
+  color: #202020;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 15px;
+}
+.actual__conversation .conversation__input__div {
+  background-color: #64759E;
+  height: 5rem;
+}
+.actual__conversation .conversation__input {
+  height: 3rem;
+  margin: 1rem;
+  width: 100%;
+}
+.actual__conversation .conversation__input__icon {
+  color: whitesmoke;
+  margin: auto;
+}
+.actual__conversation .conversation__input__icon--clip {
+  color: whitesmoke;
+  margin-top: 2rem;
+}
+
+.actual__conversation__selected {
+  visibility: visible;
+  opacity: 1;
+}
+
+br {
+  content: "";
+}
+
+.badge {
+  white-space: normal;
+}
+
+@media (max-width: 769px) {
+  .banner__button {
+    background-color: #001d61;
+    color: whitesmoke;
+    width: 50px;
+  }
+  .container__background {
+    background-color: #64759E;
+  }
+  .recents__conversations__mobile__container {
+    background-color: #001d61;
+    display: block;
+  }
+  .recents__conversations__mobile__container #collapse-recents-conversations {
+    width: 100%;
+  }
+  .recents__conversations__desktop__container {
+    display: none;
+  }
+  .actual__conversation .conversation__pill__1, .actual__conversation .conversation__pill__2 {
+    font-size: 0.8rem;
+  }
+}
+@media (min-width: 770px) {
+  .recents__conversations__mobile__container {
+    display: none;
+  }
+  .recents__conversations__desktop__container {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
