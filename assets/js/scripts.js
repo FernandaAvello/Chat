@@ -2,7 +2,7 @@ function goToChat() {
   window.location.href = './chatView.html'
 }
 function goHome() {
-  window.location.href = './index.html'
+  window.location.href = './'
 }
 function changeCard() {
   let element = document.getElementById('bold__text');
